@@ -73,7 +73,7 @@ if uploaded_file is not None:
 
 
     df_temp['Dif. Días 1era Respuesta'] = df_temp.apply(lambda r: rest_time(r), axis=1)
-    holiday = ['2022-01-01', '2022-02-07', '2022-03-21', '2022-05-05', '2022-09-14', '2022-09-16', '2022-10-12', '2022-11-21']
+    holiday = ['2024-01-01', '2024-02-05', '2024-03-18', '2024-03-18', '2024-03-21', '2024-05-01', '2024-09-16', '2024-11-18']
     start = df_temp['Fecha de 1era Respuesta'].values.astype('datetime64[D]')
     end = df_temp['Fecha Asignado'].values.astype('datetime64[D]')
     # dias habiles solamente entre fecha Asignado y Fecha de 1era Respuesta
@@ -177,7 +177,7 @@ if uploaded_file is not None:
     df_sharpR['Dif. Días 2da Respuesta'] = df_sharpR.apply(
         lambda df_sharpR: (df_sharpR['Fecha firma solución'] - df_sharpR['Fecha Asignado']), 1)
 
-    holiday = ['2022-01-01', '2022-02-07', '2022-03-21', '2022-05-05', '2022-09-14', '2022-09-16', '2022-10-12', '2022-11-21']
+    holiday = ['2024-01-01', '2024-02-05', '2024-03-18', '2024-03-18', '2024-03-21', '2024-05-01', '2024-09-16', '2024-11-18']
 
     start = df_sharpR['Fecha Asignado'].values.astype('datetime64[D]')
     end = df_sharpR['Fecha firma solución'].values.astype('datetime64[D]')
@@ -354,7 +354,7 @@ if uploaded_file is not None:
     df_sharpI['Dif. Días 2da Respuesta'] = df_sharpI.apply(
         lambda df_sharpI: (df_sharpI['Fecha firma solución'] - df_sharpI['Fecha Asignado']), 1)
 
-    holiday = ['2022-01-01', '2022-02-07', '2022-03-21', '2022-05-05', '2022-09-14', '2022-09-16', '2022-10-12', '2022-11-21']
+    holiday = ['2024-01-01', '2024-02-05', '2024-03-18', '2024-03-18', '2024-03-21', '2024-05-01', '2024-09-16', '2024-11-18']
 
     start = df_sharpI['Fecha Asignado'].values.astype('datetime64[D]')
     end = df_sharpI['Fecha firma solución'].values.astype('datetime64[D]')
