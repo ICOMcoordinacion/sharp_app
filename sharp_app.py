@@ -43,7 +43,7 @@ with st.sidebar.header('2. Carga el archivo Sharp con formato CSV'):
 
 # Pandas Profiling Report
 if uploaded_file is not None:
-    @st.cache_resource
+    @st.cache
     def load_csv():
         csv = pd.read_csv(uploaded_file, encoding='latin-1')
         return csv
